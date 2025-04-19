@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Furi Sherpa Lama</h1>
 <h3 align="center">A passionate web developer from Nepal</h3>
 
-- 🔭 I’m currently working on (https://lamafuri.kesug.com)
+- 🔭 I’m worked on (https://lamafuri.kesug.com)
 
 - 🌱 I’m currently learning **Tailwind CSS**
 
