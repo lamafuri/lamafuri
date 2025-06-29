@@ -3,7 +3,7 @@
 
 - 🔭 I worked on (https://lamafuri.kesug.com)
 
-- 🌱 I’m currently learning **Tailwind CSS**
+- 🌱 I’m currently learning **React.js**
 
 - 📫 How to reach me **lamafuri60@gmail.com**
 
