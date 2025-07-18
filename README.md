@@ -14,6 +14,9 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
+  [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/lamafuri)
+  [![X (Twitter)](https://img.shields.io/badge/X-Follow-000000?logo=x&logoColor=white&style=for-the-badge)](https://x.com/furi_lama77188)
+
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
