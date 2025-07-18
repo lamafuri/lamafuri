@@ -12,13 +12,12 @@
 
 - ⚡ Fun fact **I wish I had an elder sister.**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">📬 Connect with Me:</h3>
 <p align="left">
- ## 📬 Connect with Me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/yourusername)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/lamafuri)
 
-[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
+[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/furi_lama77188)
 
 
 </p>
