@@ -4,6 +4,9 @@
 - 🔭 I worked on (https://lamafuri.kesug.com)
 
 - 🌱 I’m currently learning **React.js**
+- 🐧  I’m currently learning **🐧 Linux**
+- 🐧  I’m currently learning **Networking Tools : 🕵️‍♂️ Nmap , 🧰 Netcat (nc)**
+  
 
 - 📫 How to reach me **lamafuri60@gmail.com**
 
