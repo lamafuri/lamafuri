@@ -3,7 +3,7 @@
 
 - 🔭 I worked on (https://lamafuri.kesug.com)
 
-- 🌱 I’m currently learning **React.js** , **Express.js , **MongoDB**
+- 🌱 I’m currently learning **React.js** , **Express.js**, **MongoDB**
 - 🐧  I’m currently learning **🐧 Linux : Ubuntu->Debian Based Distro**
 - 🐧  I’m currently learning **Networking Tools : 🕵️‍♂️ Nmap , 🧰 Netcat (nc)**
   
