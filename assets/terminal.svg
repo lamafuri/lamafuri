@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" role="img" aria-labelledby="t" xml:space="preserve">
+  <title id="t">Terminal: aws sts get-caller-identity returns Furi Sherpa Lama, Aspiring DevOps and Cloud Engineer, AWS Certified Solutions Architect – Associate, Kathmandu, Nepal, open to work</title>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 15px; fill: #c9d1d9; white-space: pre; }
+    .muted { fill: #8b949e; font-size: 13px; }
+    .prompt { fill: #3fb950; font-weight: 600; }
+    .key { fill: #79c0ff; }
+    .str { fill: #a5d6ff; }
+    .ok { fill: #3fb950; }
+    .cover, .cur1 { animation: type 2.2s steps(27, end) .6s forwards; }
+    .cur1 { animation: type 2.2s steps(27, end) .6s forwards, hide .01s 3s forwards; }
+    .out { opacity: 0; animation: show .01s forwards; }
+    .cur2 { opacity: 0; animation: blink 1s steps(1) 4.3s infinite; }
+    @keyframes type { to { transform: translateX(243px); } }
+    @keyframes show { to { opacity: 1; } }
+    @keyframes hide { to { opacity: 0; } }
+    @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .cover, .cur1 { display: none; }
+      .out { opacity: 1; animation: none; }
+      .cur2 { opacity: 1; animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="818" height="298" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <path d="M1 13a12 12 0 0 1 12-12h794a12 12 0 0 1 12 12v27H1z" fill="#161b22"/>
+  <line x1="1" y1="40" x2="819" y2="40" stroke="#30363d"/>
+  <circle cx="24" cy="21" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="21" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="21" r="6" fill="#27c93f"/>
+  <text x="410" y="26" text-anchor="middle" class="muted">furi@kathmandu: ~</text>
+
+  <!-- The command, revealed one character at a time by the sliding cover. -->
+  <text x="28" y="74"><tspan class="prompt">$</tspan></text>
+  <text x="46" y="74" textLength="243" lengthAdjust="spacing">aws sts get-caller-identity</text>
+  <rect class="cover" x="46" y="58" width="260" height="22" fill="#0d1117"/>
+  <rect class="cur1" x="46" y="60" width="9" height="18" fill="#c9d1d9"/>
+
+  <text x="28" y="104" class="out" style="animation-delay:3.1s">{</text>
+  <text x="28" y="128" class="out" style="animation-delay:3.25s">  <tspan class="key">"Name"</tspan>:          <tspan class="str">"Furi Sherpa Lama"</tspan>,</text>
+  <text x="28" y="152" class="out" style="animation-delay:3.4s">  <tspan class="key">"Role"</tspan>:          <tspan class="str">"Aspiring DevOps &amp; Cloud Engineer"</tspan>,</text>
+  <text x="28" y="176" class="out" style="animation-delay:3.55s">  <tspan class="key">"Certification"</tspan>: <tspan class="str">"AWS Certified Solutions Architect – Associate"</tspan>,</text>
+  <text x="28" y="200" class="out" style="animation-delay:3.7s">  <tspan class="key">"Location"</tspan>:      <tspan class="str">"Kathmandu, Nepal"</tspan>,</text>
+  <text x="28" y="224" class="out" style="animation-delay:3.85s">  <tspan class="key">"Status"</tspan>:        <tspan class="ok">"open-to-work"</tspan></text>
+  <text x="28" y="248" class="out" style="animation-delay:4s">}</text>
+
+  <text x="28" y="278" class="out" style="animation-delay:4.3s"><tspan class="prompt">$</tspan></text>
+  <rect class="cur2" x="46" y="264" width="9" height="18" fill="#c9d1d9"/>
+</svg>
