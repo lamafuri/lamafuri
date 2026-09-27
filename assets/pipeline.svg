@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="150" viewBox="0 0 820 150" role="img" aria-labelledby="t">
+  <title id="t">Deploy pipeline: git push, GitHub Actions build and test, Docker image build, AWS EC2 behind Nginx with SSL, live over HTTPS</title>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; text-anchor: middle; }
+    .name { fill: #e6edf3; font-size: 15px; font-weight: 600; }
+    .sub { fill: #8b949e; font-size: 12px; }
+    .glow { opacity: 0; animation: lit 5s infinite; }
+    .dot { animation: travel 5s linear infinite; }
+    @keyframes lit { 0% { opacity: 0; } 4%, 20% { opacity: 1; } 30%, 100% { opacity: 0; } }
+    @keyframes travel { 0% { transform: translateX(0); opacity: 1; } 80% { transform: translateX(640px); opacity: 1; } 81%, 100% { transform: translateX(640px); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .dot { display: none; }
+      .glow { animation: none; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="818" height="148" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <line x1="90" y1="75" x2="730" y2="75" stroke="#30363d" stroke-width="2" stroke-dasharray="6 6"/>
+  <circle class="dot" cx="90" cy="75" r="6" fill="#FF9900"/>
+
+  <g>
+    <rect x="25" y="47" width="130" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect class="glow" x="25" y="47" width="130" height="56" rx="10" fill="none" stroke="#FF9900" stroke-width="2.5" style="animation-delay:0s"/>
+    <text x="90" y="72" class="name">git push</text>
+    <text x="90" y="90" class="sub">main branch</text>
+  </g>
+  <g>
+    <rect x="185" y="47" width="130" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect class="glow" x="185" y="47" width="130" height="56" rx="10" fill="none" stroke="#FF9900" stroke-width="2.5" style="animation-delay:1s"/>
+    <text x="250" y="72" class="name">GitHub Actions</text>
+    <text x="250" y="90" class="sub">build &amp; test</text>
+  </g>
+  <g>
+    <rect x="345" y="47" width="130" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect class="glow" x="345" y="47" width="130" height="56" rx="10" fill="none" stroke="#FF9900" stroke-width="2.5" style="animation-delay:2s"/>
+    <text x="410" y="72" class="name">Docker</text>
+    <text x="410" y="90" class="sub">image build</text>
+  </g>
+  <g>
+    <rect x="505" y="47" width="130" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect class="glow" x="505" y="47" width="130" height="56" rx="10" fill="none" stroke="#FF9900" stroke-width="2.5" style="animation-delay:3s"/>
+    <text x="570" y="72" class="name">AWS EC2</text>
+    <text x="570" y="90" class="sub">Nginx + SSL/TLS</text>
+  </g>
+  <g>
+    <rect x="665" y="47" width="130" height="56" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+    <rect class="glow" x="665" y="47" width="130" height="56" rx="10" fill="none" stroke="#3fb950" stroke-width="2.5" style="animation-delay:4s"/>
+    <text x="730" y="72" class="name" fill="#3fb950" style="fill:#3fb950">✓ Live</text>
+    <text x="730" y="90" class="sub">served over HTTPS</text>
+  </g>
+</svg>
