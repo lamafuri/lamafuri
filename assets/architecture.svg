@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="480" viewBox="0 0 860 480" role="img" aria-labelledby="t">
+  <title id="t">AWS architecture: users reach Route 53, then an Application Load Balancer in a VPC, which spreads requests across an Auto Scaling group of EC2 instances running Nginx and Docker, backed by a Multi-AZ RDS PostgreSQL database, with S3 for storage, CloudWatch for monitoring and IAM for access</title>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .h { fill: #e6edf3; font-size: 17px; font-weight: 600; }
+    .cap { fill: #8b949e; font-size: 12.5px; }
+    .name { fill: #e6edf3; font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .sub { fill: #8b949e; font-size: 11.5px; text-anchor: middle; }
+    .group { font-size: 12px; font-weight: 600; }
+    .box { fill: #161b22; stroke-width: 1.5; }
+    .flow { fill: none; stroke: #484f58; stroke-width: 2; }
+    .aux { fill: none; stroke: #30363d; stroke-width: 1.5; stroke-dasharray: 4 5; }
+    @media (prefers-reduced-motion: reduce) { .dot { display: none; } }
+  </style>
+
+  <rect x="1" y="1" width="858" height="478" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="30" y="38" class="h">A highly available web app on AWS</text>
+  <text x="30" y="58" class="cap">How I'd run a production app: load-balanced, auto-scaling, Multi-AZ, monitored.</text>
+
+  <!-- VPC and its groups -->
+  <rect x="260" y="80" width="470" height="370" rx="10" fill="none" stroke="#8C4FFF" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="274" y="100" class="group" fill="#8C4FFF" style="fill:#8C4FFF">VPC</text>
+  <text x="335" y="210" class="sub">public subnet</text>
+  <rect x="415" y="112" width="150" height="304" rx="10" fill="none" stroke="#ED7100" stroke-width="1.5" stroke-dasharray="7 5"/>
+  <text x="490" y="132" class="group" fill="#ED7100" style="fill:#ED7100;text-anchor:middle">Auto Scaling group</text>
+  <text x="655" y="135" class="sub">private subnet</text>
+
+  <!-- Request paths -->
+  <path id="p1" class="flow" d="M100 250 H285 M385 250 H405 V178 H430 M550 178 H600"/>
+  <path class="flow" d="M405 250 V333 H430 M550 333 H575 V192 H600"/>
+  <path class="aux" d="M655 206 V305"/>
+  <text x="662" y="260" class="sub" style="text-anchor:start">sync</text>
+  <path class="aux" d="M730 135 H750 M730 250 H750 M730 365 H750"/>
+
+  <!-- Requests flowing through -->
+  <g class="dot" fill="#FF9900">
+    <circle r="5"><animateMotion dur="3s" repeatCount="indefinite" begin="0s" path="M100 250 H405 V178 H600"/></circle>
+    <circle r="5"><animateMotion dur="3s" repeatCount="indefinite" begin="-1.5s" path="M100 250 H405 V178 H600"/></circle>
+    <circle r="5"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-.75s" path="M100 250 H405 V333 H575 V192 H600"/></circle>
+    <circle r="5"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-2.45s" path="M100 250 H405 V333 H575 V192 H600"/></circle>
+  </g>
+
+  <!-- Users -->
+  <circle cx="65" cy="232" r="12" fill="none" stroke="#8b949e" stroke-width="2"/>
+  <path d="M43 272a22 22 0 0 1 44 0" fill="none" stroke="#8b949e" stroke-width="2"/>
+  <text x="65" y="296" class="sub">Users</text>
+
+  <!-- Networking -->
+  <rect x="120" y="225" width="110" height="50" rx="8" class="box" stroke="#8C4FFF"/>
+  <text x="175" y="248" class="name">Route 53</text>
+  <text x="175" y="265" class="sub">DNS</text>
+  <rect x="285" y="225" width="100" height="50" rx="8" class="box" stroke="#8C4FFF"/>
+  <text x="335" y="248" class="name">ALB</text>
+  <text x="335" y="265" class="sub">load balancer</text>
+
+  <!-- Compute -->
+  <rect x="430" y="150" width="120" height="56" rx="8" class="box" stroke="#ED7100"/>
+  <text x="490" y="174" class="name">EC2 · AZ a</text>
+  <text x="490" y="192" class="sub">Nginx · Docker</text>
+  <rect x="430" y="305" width="120" height="56" rx="8" class="box" stroke="#ED7100"/>
+  <text x="490" y="329" class="name">EC2 · AZ b</text>
+  <text x="490" y="347" class="sub">Nginx · Docker</text>
+
+  <!-- Database -->
+  <rect x="600" y="150" width="110" height="56" rx="8" class="box" stroke="#C925D1"/>
+  <text x="655" y="174" class="name">RDS</text>
+  <text x="655" y="192" class="sub">PostgreSQL primary</text>
+  <rect x="600" y="305" width="110" height="56" rx="8" class="box" stroke="#C925D1"/>
+  <text x="655" y="329" class="name">RDS</text>
+  <text x="655" y="347" class="sub">Multi-AZ standby</text>
+
+  <!-- Regional services -->
+  <rect x="750" y="110" width="90" height="50" rx="8" class="box" stroke="#7AA116"/>
+  <text x="795" y="133" class="name">S3</text>
+  <text x="795" y="150" class="sub">assets</text>
+  <rect x="750" y="225" width="90" height="50" rx="8" class="box" stroke="#E7157B"/>
+  <text x="795" y="248" class="name">CloudWatch</text>
+  <text x="795" y="265" class="sub">metrics · alarms</text>
+  <rect x="750" y="340" width="90" height="50" rx="8" class="box" stroke="#DD344C"/>
+  <text x="795" y="363" class="name">IAM</text>
+  <text x="795" y="380" class="sub">least privilege</text>
+
+</svg>
